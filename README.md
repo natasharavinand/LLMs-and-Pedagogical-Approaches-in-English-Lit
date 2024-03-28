@@ -14,46 +14,24 @@ While these consumer applications have broadly been used in personal and profess
 
 This senior project is interested in how LLMs can be fine-tuned with retrieval-augmented generation (RAG) and integrated into software applications to enhance English literature education at the undergraduate level. To view a more detailed project plan, visit the proposal document [here](https://docs.google.com/document/d/14rrWWusI7MY39nANhZx1RwuvegR9GHVG4u8UIckODcw/edit?usp=sharing).
 
-On the backend, this project uses:
+## Verse: A RAG-enhanced, LLM-integrated software application for English literature pedagogy
 
--  `GPT-3`, OpenAI's 3rd-generation LLM
+A software application called Verse has been created for this senior project. Source code, as well as documentation, can be found at the Verse repository [here](https://github.com/natasharavinand/Verse).
 
--  `langchain`, a framework that helps software engineers develop applications with LLMs
-
--  `ChromaDB`, an open-source embedding database
-
--  `beautifulsoup4`, a web-scraping package to process and transform raw data from course materials
-
-## Ethics Statement on AI Pedagogy Approaches
-
-While LLMs offer the potential for a more productive pedagogical experience, it may not be wise to fully replace the human student-instructor dynamic. AI assistants may democratize study for those who cannot access high-quality academic spaces. Additionally, AI assistants can be used as a supplemental tool to in-person learning. But dialogue between human students and human teachers should not be something to replace entirely. Rather, AI should focus on enhancing, rather than replacing, a person’s relationship with their learning.
-
-## Source Code
+## Project Layout
 
 This repository contains a few folders that correspond to the main deliverables of the project:
 
 1.  `UX-Research-Report`: Contains a PDF of the submitted UX research report. Includes a brief literature survey on the nexus of LLMs and pedagogy, as well as the results from a research survey.
 
-2.  `Retrieval-Augmented-Generation`: Contains preliminary data processing as well as the implementation of RAG with `langchain`, OpenAI's `gpt`, and a ChromaDB vector database.
+2.  `Retrieval-Augmented-Generation`: Contains information on the [Verse](https://github.com/natasharavinand/Verse) application and how to access source code and documentation.
 
 3. `Class-Materials`: Contains assignments completed for the CPSC 490 course, including: project proposal, presentation slides, and reports.
 
-### Installation Instructions
 
-Follow these steps to access the Streamlit demo application and interface with the RAG-integrated model:
-  
-1. Clone the repository locally.
+## Ethics Statement on AI Pedagogy Approaches
 
-2. [Optional] Create a virtual environment with your package of choice.
-
-3. Install the necessary packages in `requirements.txt` using `pip` with the `-r` flag.
-
-4. Create a `.env` file and include a field with your OpenAI developer API key (use `OPENAI_API_KEY=YOURKEYHERE`).
-
-5.  `cd` into the `Retrieval-Augmented-Generation` directory and run `streamlit run streamlit_app.py`.
-
-6. Pull up `http://localhost:8501/` and (for better results) select which course you would like to discuss. Then, begin your session! (Note: The conversation is not persistent and will disappear when you refresh the page).
-
+While LLMs offer the potential for a more productive pedagogical experience, it may not be wise to fully replace the human student-instructor dynamic. AI assistants may democratize study for those who cannot access high-quality academic spaces. Additionally, AI assistants can be used as a supplemental tool to in-person learning. But dialogue between human students and human teachers should not be something to replace entirely. Rather, AI should focus on enhancing, rather than replacing, a person’s relationship with their learning.
 
 ## References
 
